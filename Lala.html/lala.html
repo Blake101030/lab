@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABLAB Will You Marry Me?</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #proposal-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #ring-img {
+            max-width: 25%;
+            height: auto;
+            margin-bottom: 25px;
+        }
+
+        #message {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #yes-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 150px;
+            transition: all 0.3s ease;
+        }
+
+        #yes-button:hover {
+            background-color: #45a049;
+        }
+
+        #celebration-message {
+            font-size: 24px;
+            color: #4CAF50;
+            margin-top: 20px;
+            display: none;
+        }
+
+        #bigger-yes-button {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="proposal-container">
+        <img id="ring-img" src="C:\2ND year\CC105\Lala.html\2.jpg" alt="Engagement Ring">
+        <p id="message">Lablab Will You Marry Me?😣😭</p>
+        <button id="yes-button" onclick="celebrate()">Yes, I will!</button>
+        <div id="celebration-message"></div>
+    </div>
+
+    <script>
+        function celebrate() {
+            document.getElementById('celebration-message').innerHTML = 'Congratulations! Let\'s celebrate! I LOVE YOU😘';
+            document.getElementById('celebration-message').style.display = 'block';
+            document.getElementById('yes-button').classList.add('bigger-yes-button');
+            document.getElementById('yes-button').disabled = true;
+        }
+    </script>
+</body>
+
+</html>
